@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  ul{
+    margin:10px;
+    padding: 0;
+    list-style: none;
+  }
+  li{
+    float :left;
+    width: 160px;
+    height: 30px;
+    border:10px solid pink;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 10 px
+    
+  }
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li>我是标签一</li>
+    <li class="po">我是标签二</li>
+    <li>我是标签三</li>
+  </ul>
+  <script>
+    window.onload=function(){
+      var po=document.getElementsByClassName("po")[0]
+    //   po.onclick=function(){
+    //     var li=po.nextElementSibling;
+    //     console.log(li);
+    //     next.style.background="yellow"
+    //   }
+
+    // console.log(po);
+    // var li =document.createElement ("pengbo");
+    var p=document.createElement("p");
+    p.innerHTML ="我是P标签";
+    console.log(P);
+    ul.insertBefore(p.document.getElementsByTagName("li")[0])
+    var newLi=li.cloneNode(ture);
+    ul.appendChild(newLi)
+    console.log(newLix);
+  
+    
+
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      height: 100px;
+      width: 100px;
+      background-color:pink;
+ }
+  </style>
+</head>
+<body>
+  <div id="box" ></div>
+  <script>
+    window.onload =function()
+{ //1.获取事件源
+   var  box=document.getElementById("box");
+   
+   console.log(box);
+   //2.绑定事件
+   box.ondblclick  =function(){
+     //3.事件驱动程序
+     box.style.backgroundColor="yellow";
+     box.style.height ="300px";
+     box.style.width ="300px";
+   }
+}
+
+
+  </script>
+  
+</body>
+</html>
